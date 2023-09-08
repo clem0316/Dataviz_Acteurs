@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <title>Find my movie</title>
+</head>
+<body class="site">
+  <main>
+    <h1>Find my movie</h1>
+    <h2 class="word-animation">Bienvenue sur votre site de recherche cinématographique.</h2>
+    <div class="container-button">
+      <div class="container-search">
+        <input type="text" placeholder="Entrez un nom d'acteur" id="in1">
+        <button type="button" onclick="setResults1()">Valider</button>
+      </div>
+      <div class="container-search">
+        <input type="text" placeholder="Entrez un nom d'acteur" id="in2">
+        <button type="button"  onclick="setResults1();searchPoster();searchTrailer()">Valider</button>
+      </div>
+    </div>
+    <div id="videoTrailer"></div>
+    <h2 class="titlePoster">Retrouvez ces acteurs dans ces films</h2>
+    <div id ="poster"></div>
+    <div id="container">
+      <div>
+        <h3 id="nameActorOne"></h3>
+        <img id="imageActorOne" src="" alt="">
+        <p id="moviesActorOne"></p>
+      </div>
+      <div>
+        <h3 id="nameActorTwo"></h3>
+        <img id="imageActorTwo" src="" alt="">
+        <p id="moviesActorTwo"></p>
+      </div>
+    </div>
+    <div>
+    </div>
+    <button onClick="window.location.reload();">Refresh Page</button>
+    <!-- <video id="video" src="" controls></video> -->
+  </main>
+  <script src="./app2.js"></script>
+</body>
+</html>
